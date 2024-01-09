@@ -1,0 +1,133 @@
+.standard-input {
+    border-top-style: none;
+    border-right-style: none;
+    border-left-style: none;
+    border-radius: 2px;
+    font-size: 16px;
+    padding-top: 12px;
+    padding-bottom: 8px;
+    padding-left: 10px;
+    outline: none;
+    width: 100%;
+    margin-top: 8px;
+  }
+  
+  .filled-input {
+    border-style: none;
+    border: none;
+    border-radius: 2px;
+    background-color: #e0e0e0;
+    font-size: 16px;
+    outline: none;
+    padding-top: 12px;
+    padding-bottom: 8px;
+    padding-left: 10px;
+    width: 100%;
+    margin-top: 8px;
+  }
+  
+  .outlined-input {
+    border: 2px solid;
+    border-radius: 2px;
+    font-size: 16px;
+    outline: none;
+    padding-top: 12px;
+    padding-bottom: 8px;
+    padding-left: 10px;
+    width: 100%;
+    margin-top: 8px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+  }
+  
+  .input-form {
+    margin-top: 8px !important;
+  }
+  
+  .borderless-input {
+    width: 100%;
+    border-style: none;
+    font-size: 16px;
+    outline: none;
+    padding-top: 12px;
+    padding-bottom: 8px;
+    padding-left: 10px;
+    width: 100%;
+    margin-top: 8px;
+  }
+  
+  .checkbox-input {
+    margin-top: 0.75rem;
+    margin-right: 0.4rem;
+  }
+  
+  .input-container {
+    padding: 1rem;
+  }
+  
+  .ok-button-center {
+    left: 40%;
+    right: 40%;
+  }
+  
+  .okbutton-standard {
+    border: solid 1px #e0e0e0;
+    padding: 10px 16px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 2px;
+    margin-top: 20px;
+    margin-right: 0px;
+  }
+  
+  .okbutton-full {
+    display: block;
+    left: 4%;
+    right: 4%;
+    border: none;
+    background-color: #e0e0e0;
+    padding: 10px 40px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 8px;
+    text-align: center;
+    bottom: 33px;
+  }
+  
+  .okbutton-full:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .selected {
+    border: solid 1px #000000;
+  }
+  
+  .selected-button {
+    border: solid 1px #000000;
+  }
+  
+  .selected-checkbox {
+    border: solid 1px #000000;
+    padding: 2px 2px;
+  }
+  
+  .select-input {
+    border: 2px solid;
+    border-radius: 2px;
+    font-size: 16px;
+    outline: none;
+    padding-top: 12px;
+    padding-bottom: 8px;
+    padding-left: 10px;
+    width: 100%;
+    margin-top: 8px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+  }
