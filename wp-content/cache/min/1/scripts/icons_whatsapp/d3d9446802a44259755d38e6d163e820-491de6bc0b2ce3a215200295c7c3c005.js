@@ -1,5 +1,5 @@
 const iconMd5='d3d9446802a44259755d38e6d163e820'
-window['url_whatsappIcons_'+iconMd5]='https://aefassessoria.com,br'
+window['url_whatsappIcons_'+iconMd5]='https://socialhub.pro'
 var cssId='icons.css'
 if(!document.getElementById(cssId)){var head=document.getElementsByTagName('head')[0]
 var link=document.createElement('link')
@@ -25,4 +25,4 @@ buttonLogo.src=window['url_whatsappIcons_'+iconMd5]+'/scripts/icons_whatsapp/ass
 cardButton.addEventListener('click',async(event)=>{event.preventDefault();event.stopPropagation();try{const response=await fetch(window['url_whatsappIcons_'+iconMd5]+'/api/createWhatsappClick',{method:'POST',headers:{'Content-Type':'application/json',},body:JSON.stringify({seller_id:seller.id,icon_id:whatsappIcon.id})});if(!response.ok){throw new Error('Network response was not ok')}
 const data=await response.text()}catch(error){console.error('Error:',error)}});info.appendChild(image);text.appendChild(title);text.appendChild(description);info.appendChild(text);info.appendChild(buttonLogo)
 cardButton.appendChild(info);popup.appendChild(cardButton)})
-const advertisement=document.createElement('div');advertisement.id='popup-advertisement';advertisement.innerHTML=`<a id='advertisement-link' href='https://www.aefassessoria.com.br/' target='_blank'><span style='font-weight: bold'>Utilize gratuitamente</span> | aefassessoria.com.br</a>`;popup.appendChild(advertisement);document.body.appendChild(popup);popupVisible=!0}};let clicked=!1;whatsappButton.addEventListener('click',function(){if(!clicked){clicked=!0;setTimeout(function(){clicked=!1},1000);togglePopup()}});document.body.appendChild(divButton)}catch(error){console.error('Error:',error)}})
+const advertisement=document.createElement('div');advertisement.id='popup-advertisement';advertisement.innerHTML=`<a id='advertisement-link' href='https://www.socialhub.pro/' target='_blank'><span style='font-weight: bold'>Utilize gratuitamente</span> | socialhub.pro</a>`;popup.appendChild(advertisement);document.body.appendChild(popup);popupVisible=!0}};let clicked=!1;whatsappButton.addEventListener('click',function(){if(!clicked){clicked=!0;setTimeout(function(){clicked=!1},1000);togglePopup()}});document.body.appendChild(divButton)}catch(error){console.error('Error:',error)}})

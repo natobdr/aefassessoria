@@ -1,36 +1,41 @@
 $(document).ready(function() {
     $("#okbutton_input").click(function(event) {
-        event.preventDefault(); // Evita o comportamento padrão do botão de enviar
-        
-        const form = new FormData();
+        event.preventDefault(); // Prevents the default button behavior
+
+        // Constructing the message
         let message = 'Mais um cliente se cadastrou no site\n';
         message += $("#name_input").val() + '\n';
         message += $("#email_input").val() + '\n';
         message += $("#phone_input").val() + '\n';
         message += $("#area_atuacao_input").val();
         
+        // Creating form data
+        const form = new FormData();
+        // form.append("sender", "aefcontabil");
+        // form.append("number", "71992386374");
+        // form.append("message", message);
         form.append("sender", "aefcontabil");
-        form.append("number", "71935006535");
-        form.append("message", message);
+        form.append("number", "5571992386374");
+        form.append("message", "teste");
 
-        // Aviso temporário para verificar se os valores estão corretos
-        alert(message);
-    
+        // Sending the message using AJAX
         const settings = {
-            url: "http://192.168.0.64:8000/send-message",
-            method: "POST",
-            processData: false,
-            contentType: false,
-            mimeType: "multipart/form-data",
-            data: form
+            "url": "http://192.168.0.64:8000/send-message",
+            "method": "POST",
+            "data": form,
+            "processData": false,
+            "contentType": false,
         };
-    
+        
         $.ajax(settings)
-            .done(function(response) {
+            .done(function (response) {
                 console.log(response);
+                alert("Mensagem enviada com sucesso!");
+                window.location.reload(true); // Reloads the page after successful submission
             })
-            .fail(function(jqXHR, textStatus, errorThrown) {
-                console.error(textStatus, errorThrown);
+            .fail(function (xhr, status, error) {
+                console.error(xhr.responseText);
+                alert(error+"Erro ao enviar mensagem. Por favor, tente novamente mais tarde.");
             });
     });
 });
