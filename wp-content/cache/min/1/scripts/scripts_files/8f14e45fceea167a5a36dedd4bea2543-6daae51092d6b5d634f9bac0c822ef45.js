@@ -11,13 +11,10 @@ $(document).ready(function() {
         
         // Creating form data
         const form = new FormData();
-        // form.append("sender", "aefcontabil");
-        // form.append("number", "71992386374");
-        // form.append("message", message);
         form.append("sender", "aefcontabil");
-        form.append("number", "5571992386374");
-        form.append("message", "teste");
-
+        form.append("number", "71992386374");
+        form.append("message", message);
+        
         // Sending the message using AJAX
         const settings = {
             "url": "http://192.168.0.64:8000/send-message",
